@@ -1,0 +1,237 @@
+body {
+margin: 0 auto;
+background-color: black;
+color: white;
+}
+.container {
+max-width: 1440px;
+margin: 0 auto;
+}
+.top-block {
+max-width: 1360px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 30px auto;
+align-items: center;
+padding: 0 20px;
+row-gap: 20px;
+column-gap: 10px;
+}
+form input, select, .info-child, .dark {
+-webkit-box-shadow: 0px -2px 21px 12px rgba(175, 192, 206, 0.26);
+-moz-box-shadow: 0px -2px 21px 12px rgba(175, 192, 206, 0.26);
+box-shadow: 0px -2px 21px 12px rgba(175, 192, 206, 0.26);
+}
+form input {
+font-size: 25px;
+margin: 0 auto;
+width: 350px;
+border: 1px solid white;
+outline: 1px solid black;
+border-radius: 20px;
+color: white;
+background-color: rgb(35, 34, 34);
+padding: 6px 15px;
+}
+select {
+padding: 9px 13px;
+border: 1px solid white;
+background-color: rgb(35, 34, 34);
+outline: 1px solid black;
+color: white;
+font-size: 21px;
+border-radius: 20px;
+}
+.info-parent {
+max-width: 1440px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 25px;
+padding: 0 20px;
+column-gap: 15px;
+}
+.info-child {
+max-width: 320px;
+margin: 0 auto;
+border: 1px solid white;
+outline: 1px solid black;
+background-color: rgba(138, 148, 157, 0.26);
+cursor: pointer;
+}
+.info-child img {
+width: 320px;
+height: 213px;
+}
+.info-text {
+margin: 0 auto;
+font-size: 22px;
+padding: 10px;
+padding-bottom: 14px;
+}
+.info-text h1 {
+font-size: 30px;
+font-weight: bold;
+margin: 10px 0;
+}
+.info-text div {
+font-weight: bold;
+padding: 6px 0;
+}
+.info-text span {
+font-weight: normal;
+padding-left: 5px;
+}
+.dark {
+padding: 10px;
+box-shadow: 0 0 30px white;
+border-radius: 40%;
+font-weight: bold;
+}
+.night {
+transition: all 0.3s;
+width: 34px;
+height: 34px;
+background: url(img/night.svg) no-repeat;
+background-position: center;
+background-color: white;
+}
+.light {
+transition: all 0.3s;
+background: url(img/light.svg) no-repeat;
+background-position: center;
+}
+.big_window {
+max-width: 1440px;
+margin: 0 auto;
+}
+.close_button {
+position: relative;
+left: 95%;
+top: 20px;
+background-color: black;
+border: 1px solid white;
+outline: 1px solid black;
+width: 40px;
+height: 40px;
+padding-right: 36px;
+}
+.div1, .div2 {
+background-color: white !important;
+width: 30px;
+height: 3px;
+transform: rotate(45deg);
+}
+.div2 {
+margin-top: -2px;
+transform: rotate(-45deg);
+}
+.d-n {
+display: none;
+}
+
+.d-f {
+display: flex;
+}
+.white_mode {
+background-color: rgb(255, 255, 255);
+color: black !important;
+}
+.white_mode .div1, .white_mode .div2 {
+background-color: black;
+}
+.white_mode .info-child, .white_mode select, .white_mode button {
+-webkit-box-shadow: 0px -2px 21px 12px rgba(68, 74, 80, 0.26);
+-moz-box-shadow: 0px -2px 21px 12px rgba(68, 74, 80, 0.26);
+box-shadow: 0px -2px 21px 12px rgba(68, 74, 80, 0.26);
+}KO
+.big_window .info-child {
+max-width: 1440px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.d-f h1 {
+font-size: 45px;
+text-align: center;
+}
+.d-f .info-text div {
+font-size: 26px;
+text-align: center;
+margin-top: 11px;
+}
+.p-5 span {
+font-size: 22px;
+}
+.d-f .images {
+margin-top: 10%;
+margin: 0 auto;
+max-width: 800px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+column-gap: 80px;
+row-gap: 50px;
+}
+.d-f .gerb {
+width: 260px;
+}
+.big-display {
+display: flex;
+flex-direction: column;
+column-gap: 30px;
+margin: 0 auto;
+margin-top: 30px;
+}
+.d-f .bayroq {
+border: 2px solid black;
+outline: 2px solid white;
+}
+@media screen and (max-width:1000px) {
+.close_button {
+width: 25px;
+padding: 0 0 0 1.9px;
+height: 25px;
+margin-left: -30px;
+}
+.close_button div {
+width: 20px;
+height: 2px;
+}
+.d-f .gerb {
+width: 160px;
+}
+.d-f .bayroq {
+width: 200px;
+height: 150px;
+}
+.d-f h1 {
+font-size: 30px;
+}
+.d-f .info-text div {
+font-size: 18px;
+}
+.d-f .info-text span {
+font-size: 16px;
+}}
+
+@media screen and (max-width:695px) {
+form input {
+text-align: center;
+width: 200px;
+font-size: 19px;
+}
+.top-block select {
+padding: 5px;
+margin: 0 auto;
+font-size: 13px;
+text-align: center;
+}
+option {
+font-size: 15px;
+}
+}

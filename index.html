@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Davlatlar haqida...</title>
+</head>
+<body>
+    <div class="container">  
+        <div class="top-block">
+            <form><input id="search_input" type="search" placeholder="Qidirish..."></form>
+            <select class="sort_parent" onchange="sort_option()">
+                <option value="all"selected>Hammasi</option>
+                <option value="africa">Afrika</option>
+                <option value="asia">Osiyo</option>
+                <option value="america">Amerika</option>
+                <option value="antarctic">Antarktika</option>
+                <option value="europe">Yevropa</option>
+                <option value="oceania">Okeaniya</option>
+            </select>
+            <button class="night dark" onclick="dark_mode()"></button>
+        </div>
+        <div class="info-parent"></div>
+        <div class="opener-block"></div>
+    </div>
+<div class="big_window d-n"></div>
+<script src="main.js"></script>
+</body>
+</html>
